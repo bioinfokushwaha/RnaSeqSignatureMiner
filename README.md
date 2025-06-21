@@ -24,8 +24,8 @@ docker build -t rnaseq_signature_miner
 docker run --rm -v "$PWD":/app rnaseq_signature_miner
 ````
 
-## Folder Structur
-
+## 📁 Project Directory Structure
+```
 scripts/
 │
 ├── Dockerfile
@@ -33,3 +33,4 @@ scripts/
 ├── main.sh
 ├── normalised_values.xlsx       # input
 ├── Sampleinfo.xlsx              # input
+```
