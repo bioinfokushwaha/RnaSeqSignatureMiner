@@ -6,20 +6,20 @@ This pipeline selects gene expression signatures from RNA-Seq data using LASSO r
 
 ## 📦 Usage Instructions (via Docker)
 
-# 1. Clone the repository
+### 1. Clone the repository
 ```
 git clone https://github.com/bioinfokushwaha/RnaSeqSignatureMiner.git
 ```
 
-# 2. Move into the scripts folder
+### 2. Move into the scripts folder
 ```
 cd RnaSeqSignatureMiner/scripts
 ```
-# 3. create doaker container
+### 3. create doaker container
 ```
 docker build -t rnaseq_signature_miner
 ```
-# 4. Run the Docker build and container
+### 4. Run the Docker build and container
 ```
 docker run --rm -v "$PWD":/app rnaseq_signature_miner
 ````
