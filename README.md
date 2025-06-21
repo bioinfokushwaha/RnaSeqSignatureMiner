@@ -15,7 +15,7 @@ cd RnaSeqSignatureMiner/scripts
 
 
 
-docker build -t rnaseq_signature_miner .
+docker build -t rnaseq_signature_miner
 docker run --rm -v "$PWD":/app rnaseq_signature_miner
 
 
@@ -24,6 +24,6 @@ scripts/
 ├── Dockerfile
 ├── main.py
 ├── main.sh
-├── normalised_values.xlsx       # input
-├── Sampleinfo.xlsx              # input
+├── normalised_values.xlsx       # input file of normalized values
+├── Sampleinfo.xlsx              # input the sample file.
 
