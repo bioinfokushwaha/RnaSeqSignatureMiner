@@ -1,29 +1,13 @@
 # 🧬 RNA-Seq Signature Miner
 
-This pipeline selects gene expression signatures using LASSO, and evaluates classification models using multiple metrics and visualizations like ROC and LDA plots.
+This pipeline selects gene expression signatures from RNA-Seq data using LASSO regression. It then evaluates multiple classification models using performance metrics and visualizations such as ROC curves and LDA plots.
 
 ---
 
-## 📦 Step-by-Step Usage (via Docker)
+## 📦 Usage Instructions (via Docker)
 
-### 1. Clone the Repository
+### 🔹 1. Clone the Repository
 
 ```bash
 git clone https://github.com/bioinfokushwaha/RnaSeqSignatureMiner.git
-cd RnaSeqSignatureMiner/scripts 
-
-
-
-
-docker build -t rnaseq_signature_miner
-docker run --rm -v "$PWD":/app rnaseq_signature_miner
-
-
-scripts/
-│
-├── Dockerfile
-├── main.py
-├── main.sh
-├── normalised_values.xlsx       # input file of normalized values
-├── Sampleinfo.xlsx              # input the sample file.
-
+cd RnaSeqSignatureMiner/scripts
