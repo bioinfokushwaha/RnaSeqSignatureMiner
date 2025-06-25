@@ -17,7 +17,7 @@ cd RnaSeqSignatureMiner/scripts
 ```
 ### 3. create doaker container
 ```
-docker build -t rnaseq_signature_miner
+docker build -t rnaseq_signature_miner .
 ```
 ### 4. Run the Docker build and container
 ```
