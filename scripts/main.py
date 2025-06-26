@@ -25,7 +25,7 @@ warnings.filterwarnings("ignore")
 # Create output directory
 output_dir = "./results"
 os.makedirs(output_dir, exist_ok=True)
-os.chmod(output_dir, 0o775)
+os.chmod(output_dir, 0o777)
 
 # Load and preprocess data
 df = pd.read_excel("normalised_values.xlsx")
