@@ -19,6 +19,11 @@ cd RnaSeqSignatureMiner/scripts
 ```
 docker build -t rnaseq_signature_miner .
 ```
+### 4. Copy the xlsx files to  scripts folder
+```
+cp /path/to/folder/normalised_values.xlsx ../
+cp /path/to/folder/Sampleinfo.xlsx ../
+```
 ### 4. Run the Docker build and container
 ```
 docker run --rm -v "$PWD":/app rnaseq_signature_miner
