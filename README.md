@@ -14,7 +14,7 @@ Before proceeding, please ensure the following prerequisites are met:
 
    2) Sample Metadata (Sampleinfo.xlsx)
 
-        A sample information file (e.g., sample_metadata.csv) must be prepared, containing relevant metadata such as:
+        A sample information file must be prepared, containing relevant metadata such as:
             i) Sample IDs
 
        ii) Condition/Group
