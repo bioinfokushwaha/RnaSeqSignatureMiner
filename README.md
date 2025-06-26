@@ -6,13 +6,13 @@ This pipeline selects gene expression signatures from RNA-Seq data using LASSO r
 ##  PREQUESTIES 
 Before proceeding, please ensure the following prerequisites are met:
 
-  1)  Normalized Expression Data
+  1)  Normalized Expression Data (normalised_values.xlsx)
 
         i)Confirm that your gene expression dataset has been normalized (e.g., TPM, RPKM, CPM, or log-transformed counts).
 
         ii) If normalization has not yet been performed, please preprocess your raw count data to generate a normalized expression matrix.
 
-   2) Sample Metadata
+   2) Sample Metadata (Sampleinfo.xlsx)
 
         A sample information file (e.g., sample_metadata.csv) must be prepared, containing relevant metadata such as:
             i) Sample IDs
