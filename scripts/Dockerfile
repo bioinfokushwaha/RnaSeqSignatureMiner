@@ -1,14 +1,26 @@
-FROM python:3.10-slim
+FROM python:3.11-slim
 
-WORKDIR /app
-
-RUN apt-get update && apt-get install -y \
+# Install system dependencies needed by pip and scientific libraries
+RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
+    gcc \
+    g++ \
+    libopenblas-dev \
+    liblapack-dev \
     && rm -rf /var/lib/apt/lists/*
 
-COPY requirements.txt .
-COPY main.py .
+# Set working directory
+WORKDIR /app
 
+# Upgrade pip, setuptools, wheel
+RUN pip install --upgrade pip setuptools wheel
+
+# Copy and install dependencies
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-CMD ["python", "main.py"]
+# Copy rest of your app (if any)
+COPY . .
+
+# Default command
+CMD ["python"]
