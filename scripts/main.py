@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import warnings
 from sklearn.preprocessing import StandardScaler, MinMaxScaler, RobustScaler
 from sklearn.decomposition import PCA
 from sklearn.linear_model import Lasso
@@ -20,7 +21,7 @@ from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 
 random.seed(0)
 np.random.seed(0)
-
+warnings.filterwarnings("ignore")
 # Create output directory
 output_dir = "./results"
 os.makedirs(output_dir, exist_ok=True)
