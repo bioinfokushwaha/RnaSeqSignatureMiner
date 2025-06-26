@@ -31,7 +31,7 @@ git clone https://github.com/bioinfokushwaha/RnaSeqSignatureMiner.git
 ```
 cd RnaSeqSignatureMiner/scripts
 ```
-### 3. Create doaker container
+### 3. Create docker container
 ```
 docker build -t rnaseq_signature_miner .
 ```
