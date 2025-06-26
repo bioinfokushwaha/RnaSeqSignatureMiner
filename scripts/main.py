@@ -24,7 +24,7 @@ np.random.seed(0)
 # Create output directory
 output_dir = "./results"
 os.makedirs(output_dir, exist_ok=True)
-os.chmod(output_dir, 0o774)
+os.chmod(output_dir, 0o775)
 
 # Load and preprocess data
 df = pd.read_excel("normalised_values.xlsx")
