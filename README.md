@@ -3,6 +3,22 @@
 This pipeline selects gene expression signatures from RNA-Seq data using LASSO regression. It then evaluates multiple classification models using performance metrics and visualizations such as ROC curves and LDA plots.
 
 ---
+##  PREQUESTIES 
+Before proceeding, please ensure the following prerequisites are met:
+
+  1)  Normalized Expression Data
+
+        i)Confirm that your gene expression dataset has been normalized (e.g., TPM, RPKM, CPM, or log-transformed counts).
+
+        ii) If normalization has not yet been performed, please preprocess your raw count data to generate a normalized expression matrix.
+
+   2) Sample Metadata
+
+        A sample information file (e.g., sample_metadata.csv) must be prepared, containing relevant metadata such as:
+            i) Sample IDs
+
+       ii) Condition/Group
+
 
 ## 📦 Usage Instructions (via Docker)
 
@@ -24,7 +40,7 @@ docker build -t rnaseq_signature_miner .
 cp /path/to/folder/normalised_values.xlsx ../
 cp /path/to/folder/Sampleinfo.xlsx ../
 ```
-### 4. Run the Docker build and container
+### 5. Run the Docker build and container
 ```
 docker run --rm -v "$PWD":/app rnaseq_signature_miner
 ````
