@@ -170,8 +170,8 @@ infection = lda_df[lda_df["Sample"] == 1]
 
 plt.figure(figsize=(8, 6))
 plt.scatter(control['LD'], np.zeros_like(control['LD']), c="blue", label="Control", marker='o', edgecolors='k', alpha=0.6)
-plt.scatter(infection['LD'], np.zeros_like(infection['LD']), c="red", label="Mastitis", marker='o', edgecolors='k', alpha=0.6)
-plt.title('LDA - Control vs Mastitis')
+plt.scatter(infection['LD'], np.zeros_like(infection['LD']), c="red", label="Treatment", marker='o', edgecolors='k', alpha=0.6)
+plt.title('LDA - Control vs Treatment')
 plt.xlabel('LDA Components')
 plt.yticks([])
 plt.legend()
