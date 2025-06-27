@@ -24,8 +24,8 @@ You must provide a metadata file (e.g., Sampleinfo.xlsx) that includes relevant 
 Git is required to clone the project repository.  📥 Download and install Git: https://git-scm.com/downloads
  
  ### 4) 🐳 Docker
-
-Docker is required to build and run the containerized environment. 📥 Install Docker: https://docs.docker.com/engine/install/
+ 
+ Docker is required to build and run the containerized environment. 📥 Install Docker: https://docs.docker.com/engine/install/
 
 
 
