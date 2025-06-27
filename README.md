@@ -19,6 +19,9 @@ Before proceeding, please ensure the following prerequisites are met:
 
        ii) Condition/Group
 
+  3) You should install git to download this github repository. For this please visit https://git-scm.com/downloads
+  4) Also you need to install docker. For this plase visit https://docs.docker.com/engine/install/
+
 
 ## 📦 Usage Instructions (via Docker)
 
