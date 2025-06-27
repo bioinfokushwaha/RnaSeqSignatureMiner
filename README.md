@@ -3,24 +3,29 @@
 This pipeline selects gene expression signatures from RNA-Seq data using LASSO regression. It then evaluates multiple classification models using performance metrics and visualizations such as ROC curves and LDA plots.
 
 ---
-##  PREQUESTIES 
+## ✅ PREQUESTIES 
 Before proceeding, please ensure the following prerequisites are met:
 
-  1)  Normalized Expression Data (normalised_values.xlsx)
+### 1) 📄 Normalized Expression Data
 
-        i)Confirm that your gene expression dataset has been normalized (e.g., TPM, RPKM, CPM, or log-transformed counts).
+  You must have a normalized gene expression dataset (normalised_values.xlsx).
 
-        ii) If normalization has not yet been performed, please preprocess your raw count data to generate a normalized expression matrix.
+  ✅ Confirm that your gene expression data has been normalized, using one of the following methods:  TPM (Transcripts Per Million),  RPKM (Reads Per Kilobase Million),  CPM (Counts Per Million), Log-transformed counts
 
-   2) Sample Metadata (Sampleinfo.xlsx)
+  ⚠️ If your data is not normalized, please preprocess your raw count data to generate a normalized expression matrix before continuing.
+  
+### 2) 📋 Sample Metadata
 
-        A sample information file must be prepared, containing relevant metadata such as:
-            i) Sample IDs
+You must provide a metadata file (e.g., Sampleinfo.xlsx) that includes relevant sample information:
+    🆔 Sample IDs,     🧪 Condition or Experimental Group (e.g., Control, Treated)
 
-       ii) Condition/Group
+ ### 3) 🛠️ Git
 
-  3) You should install git to download this github repository. For this please visit https://git-scm.com/downloads
-  4) Also you need to install docker. For this plase visit https://docs.docker.com/engine/install/
+Git is required to clone the project repository.  📥 Download and install Git: https://git-scm.com/downloads
+ ### 4) 🐳 Docker
+
+Docker is required to build and run the containerized environment.  📥 Install Docker: https://docs.docker.com/engine/install/
+
 
 
 ## 📦 Usage Instructions (via Docker)
