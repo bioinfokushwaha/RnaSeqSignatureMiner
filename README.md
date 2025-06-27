@@ -6,7 +6,7 @@ This pipeline selects gene expression signatures from RNA-Seq data using LASSO r
 ## ✅ PREQUESTIES 
 Before proceeding, please ensure the following prerequisites are met:
 
-### 1) 📄 Normalized Expression Data
+### 1)  Normalized Expression Data 📄
 
   You must have a normalized gene expression dataset (normalised_values.xlsx).
 
@@ -14,16 +14,16 @@ Before proceeding, please ensure the following prerequisites are met:
 
   ⚠️ If your data is not normalized, please preprocess your raw count data to generate a normalized expression matrix before continuing.
   
-### 2) 📋 Sample Metadata
+### 2)  Sample Metadata 📋
 
 You must provide a metadata file (e.g., Sampleinfo.xlsx) that includes relevant sample information:
     🆔 Sample IDs,     🧪 Condition or Experimental Group (e.g., Control, Treated)
 
- ### 3) 🛠️ Git
+ ### 3)  Git 🛠️
 
 Git is required to clone the project repository.  📥 Download and install Git: https://git-scm.com/downloads
  
- ### 4) 🐳 Docker
+ ### 4) Docker 🐳 
  
  Docker is required to build and run the containerized environment. 📥 Install Docker: https://docs.docker.com/engine/install/
 
