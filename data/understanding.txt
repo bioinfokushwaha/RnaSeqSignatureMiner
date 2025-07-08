@@ -1,2 +1,0 @@
-For pandas and visualization please visit the github link and tutorial.
-https://github.com/guipsamora/pandas_exercises
